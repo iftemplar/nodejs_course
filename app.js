@@ -2,12 +2,16 @@ console.log('Starting app');
 
 const fs = require('fs'); // fs (File System) is a built in Node.js module
 const _ = require('lodash');
+const yargs = require('yargs');
 
 const notes = require('./notes.js');
 
+const argv = yargs.argv;
 var command = process.argv[2];
 console.log('Command: ', command);
-console.log(process.argv);
+console.log('Process: ', process.argv);
+console.log('Yargs', argv);
+
 
 if(command === 'add'){
 	console.log('Adding a note');
