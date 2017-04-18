@@ -1,9 +1,16 @@
-var obj = {
-	name : 'Mykola'
-};
+// // converting object to a string
+// var obj = {
+// 	name : 'Mykola'
+// };
+// var stringObj = JSON.stringify
 
-var stringObj = JSON.stringify(obj);
-console.log(typeof obj);
-console.log(obj);
-console.log(typeof stringObj);
-console.log(stringObj);
+
+
+// Creating JSON object
+// we need to convert it to an object
+// string
+var personString = '{"name" : "Mykola", "age": 28}';
+// converting
+var person = JSON.parse(personString);
+console.log(typeof person);
+console.log(personString);
